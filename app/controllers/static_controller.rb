@@ -1,6 +1,6 @@
 class StaticController < ApplicationController
-
-	def Nosotros
+	layout 'static'
+	def nosotros
 	end
 
 	def Contactenos
