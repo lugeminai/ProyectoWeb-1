@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
  
-  get 'static/Nosotros'
+  get 'static/nosotros'
   get 'static/Contactenos'
   get 'static/Proyectos'
   get 'static/Acceder'
