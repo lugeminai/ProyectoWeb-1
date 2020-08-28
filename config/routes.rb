@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  
+  #resources :proyectos
+  #get 'home/index'
  
   get 'static/nosotros'
-  get 'static/Contactenos'
-  get 'static/Proyectos'
-  get 'static/Acceder'
-
+  get 'static/contactenos'
+  get 'static/acceder'
+  get 'static/proyectos'
+  
   root 'home#index'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

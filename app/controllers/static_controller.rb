@@ -3,14 +3,13 @@ class StaticController < ApplicationController
 	def nosotros
 	end
 
-	def Contactenos
+	def contactenos
 	end
 
-	def Proyectos
+	def acceder
 	end
 
-	def Acceder
+	def proyectos
 	end
-
 
 end
