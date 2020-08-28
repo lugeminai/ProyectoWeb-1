@@ -2,11 +2,38 @@
 	<title>Acceder</title>
 <% end %>
 
-<%= content_for :intro do%>
-	<h3>acceder asdasdasd</h3>
+<%= content_for :head do%>
+	<title>Acceder</title>
 <% end %>
+<body>
 
-<p>
-	Prueba ------------ Prueba
-</p>
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Ingresar</h1>
+			</div>
 
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="usuario" id="login-name">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<br>
+
+				<div class="control-group">
+				
+				<input type="password" class="login-field" value="" placeholder="contraseña" id="login-pass">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				
+				</div>
+				<br>
+
+				<div class="form-group col-md-2">
+				<a class="btn btn-primary btn-large btn-block" href="#">Ingresar</a>
+				<a class="login-link" href="#">Has olvidado tu contraseña?</a>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
