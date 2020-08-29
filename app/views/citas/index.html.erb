@@ -1,2 +1,197 @@
-<h1>Citas#index</h1>
-<p>Find me in app/views/citas/index.html.erb</p>
+<%= content_for :head do %>
+    <title>Listado de Citas</title>
+<% end %>
+
+<%= content_for :intro do %>
+    <h1 style= "color: blue;"}>Listado de Citas</h1>
+<% end %>
+<h3>Citas</h3>
+<div class="col-12">
+    <form>
+        <div class="form-group row">
+            <label for="user_name" class="col-1 col-form-label">Código</label>
+            <div class="col-2">
+                <input id="user_name" name="user_name" type="text" class="form-control" />
+            </div>
+            <label for="user_profile" class="col-1 col-form-label">Fecha</label>
+            <div class="col-3">
+                <input id="user_fecha" name="user_name" type="date" class="form-control" />
+            </div>
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-primary">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" 
+                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                    Buscar
+                </button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-warning">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" 
+                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                    </svg>
+                    Limpiar
+                </button>
+            </div>
+        </div>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Código</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">DNI</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Fecha/Hora</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>C001</td>
+                    <td>Gian</td>
+                    <td>Herrera Lopez</td>
+                    <td>76534908</td>
+                    <td>967345627</td>
+                    <td>10/08/2020 09:30</td>
+                    <td>Atendido</td>
+                    <td>
+                        <button type="button" class="btn btn-info" style="margin:2px"
+                                data-toggle="modal" data-target="#userModal">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" 
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
+                                <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>C002</td>
+                    <td>Rosa Eugenia</td>
+                    <td>Flores Peralta</td>
+                    <td>56478345</td>
+                    <td>967345627</td>
+                    <td>11/08/2020 10:45</td>
+                    <td>Atendido</td>
+                    <td>
+                        <button type="button" class="btn btn-info" style="margin:2px"
+                                data-toggle="modal" data-target="#userModal">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" 
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
+                                <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>C003</td>
+                    <td>Stefany</td>
+                    <td>Dongo Rios</td>
+                    <td>56478345</td>
+                    <td>967345627</td>
+                    <td>12/08/2020 18:05</td>
+                    <td>-</td>
+                    <td>
+                        <button type="button" class="btn btn-info" style="margin:2px"
+                                data-toggle="modal" data-target="#userModal">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" 
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
+                                <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>C004</td>
+                    <td>Julian</td>
+                    <td>Romero Ceron</td>
+                    <td>56478345</td>
+                    <td>967345627</td>
+                    <td>13/08/2020 15:30</td>
+                    <td>-</td>
+                    <td>
+                        <button type="button" class="btn btn-info" style="margin:2px"
+                                data-toggle="modal" data-target="#userModal">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" 
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
+                                <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal fade" id="userModal" tabindex="-1" role="dialog" 
+             aria-labelledby="userModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userModalLabel">Editar Cita</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="user_dni" >Código</label>
+                            <input id="user_dni" name="user_dni" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="user_name" >Nombres</label>
+                            <input id="user_name" name="user_name" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="user_apellido" >Apellidos</label>
+                            <input id="user_apellido" name="user_apellido" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="user_apellido" >DNI/CE</label>
+                            <input id="user_apellido" name="user_apellido" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="user_apellido" >Teléfono</label>
+                            <input id="user_apellido" name="user_apellido" type="text" class="form-control" />
+                        </div>     
+                        <div class="form-group">
+                            <label for="user_fecha" >Fecha</label>
+                            <input id="user_fecha" name="user_fecha" type="date" class="form-control" />
+                        </div> 
+                        <div class="form-group">
+                            <label for="user_fecha" >Hora</label>
+                            <input id="user_fecha" name="user_fecha" type="time" class="form-control" />
+                        </div> 
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">Atendido</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
