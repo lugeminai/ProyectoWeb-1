@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'citas/index'
   #resources :proyectos
   #get 'home/index'
  
