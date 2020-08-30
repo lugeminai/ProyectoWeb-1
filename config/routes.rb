@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'static/ingUsuario'
   get 'static/solicitudcita'
   get 'static/separardepartamento'
+  get 'static/detalledep'
   get 'static/reporte'
   
   root 'home#index'
