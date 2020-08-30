@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'static/ingProyecto'
   get 'static/admUsuario'
   get 'static/ingUsuario'
+  get 'static/solicitudcita'
   
   root 'home#index'
 
