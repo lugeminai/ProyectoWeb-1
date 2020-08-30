@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #get 'home/index'
  
   get 'home/index'
+  get 'home/index2'
   get 'static/nosotros'
   get 'static/contactenos'
   get 'static/acceder'
