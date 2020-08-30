@@ -21,6 +21,9 @@ Rails.application.routes.draw do
   get 'static/separardepartamento'
   get 'static/detalledep'
   get 'static/reporte'
+  get 'static/ventas'
+  get 'static/ingVentas'
+  
   
   root 'home#index'
 
