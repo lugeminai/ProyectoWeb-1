@@ -37,5 +37,8 @@ class StaticController < ApplicationController
 	end
 
 	def detalledep
+	end 
+	
+	def reporte
 	end
 end

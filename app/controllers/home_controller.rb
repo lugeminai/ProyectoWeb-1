@@ -5,5 +5,9 @@ class HomeController < ApplicationController
   def proyectoindex
     render :index
   end
+
+  def index2
+  end
+
   
 end
