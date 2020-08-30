@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #get 'home/index'
  
   get 'home/index'
+  get 'home/index2'
   get 'static/nosotros'
   get 'static/contactenos'
   get 'static/acceder'
@@ -18,6 +19,8 @@ Rails.application.routes.draw do
   get 'static/ingUsuario'
   get 'static/solicitudcita'
   get 'static/separardepartamento'
+  get 'static/detalledep'
+  get 'static/reporte'
   
   root 'home#index'
 

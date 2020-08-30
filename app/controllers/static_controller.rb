@@ -35,4 +35,7 @@ class StaticController < ApplicationController
 
 	def separardepartamento
 	end
+
+	def detalledep
+	end
 end
