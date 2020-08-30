@@ -12,4 +12,24 @@ class StaticController < ApplicationController
 	def proyectos
 	end
 
+	def admDepartamento		
+	end
+
+	def ingDepartamento		
+	end
+
+	def admProyecto	
+	end
+
+	def ingProyecto		
+	end
+
+	def admUsuario
+	end
+
+	def ingUsuario	
+	end
+
+
+
 end
