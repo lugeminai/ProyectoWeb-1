@@ -41,4 +41,10 @@ class StaticController < ApplicationController
 	
 	def reporte
 	end
+
+	def ventas
+	end
+
+	def ingVentas
+	end
 end
