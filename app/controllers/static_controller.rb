@@ -30,6 +30,9 @@ class StaticController < ApplicationController
 	def ingUsuario	
 	end
 
+	def solicitudcita
+	end
 
-
+	def separardepartamento
+	end
 end
