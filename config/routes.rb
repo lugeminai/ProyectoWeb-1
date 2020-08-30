@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   get 'static/acceder'
   get 'static/proyectos'
   get 'static/departamentos'
+  get 'static/admDepartamento'
+  get 'static/ingDepartamento'
+  get 'static/admProyecto'
+  get 'static/ingProyecto'
+  get 'static/admUsuario'
+  get 'static/ingUsuario'
   
   root 'home#index'
 
