@@ -26,6 +26,9 @@ Rails.application.routes.draw do
   get 'admin/reporte'
   get 'admin/ventas'
   get 'admin/ingVentas'
+
+  get 'static/detalledep'
+  get 'static/solicitudcita'
   
   root 'home#index'
 
