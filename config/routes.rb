@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  resources :empleados
+  resources :departamentos
+  resources :proyectos
   get 'citas/index'
   get 'home/index'
   get 'home/index2'
@@ -8,6 +11,8 @@ Rails.application.routes.draw do
   get 'static/acceder'
   get 'static/proyectos'
   get 'static/departamentos'
+  get 'static/detalledep'
+  get 'static/solicitudcita'
   
   get 'admin/admDepartamento'
   get 'admin/ingDepartamento'

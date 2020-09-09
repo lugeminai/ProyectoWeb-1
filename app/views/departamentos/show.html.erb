@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Proyecto:</strong>
+  <%= @departamento.proyecto %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @departamento.area %>
+</p>
+
+<p>
+  <strong>Habitaciones:</strong>
+  <%= @departamento.habitaciones %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @departamento.precio %>
+</p>
+
+<p>
+  <strong>Fotos:</strong>
+  <%= @departamento.fotos %>
+</p>
+
+<%= link_to 'Edit', edit_departamento_path(@departamento) %> |
+<%= link_to 'Back', departamentos_path %>
