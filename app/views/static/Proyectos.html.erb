@@ -12,7 +12,10 @@
 
 <div class="container">
     <div class="row">
+    <% @proyectos.each do |proyecto| %>
         <div class="col-3">
+        <br>
+        <br>
             <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -42,14 +45,18 @@
             </div>
         </div>
         <div class="col-9">
+          <br>      
             <a class="nav-link" href="/static/departamentos">
-                <p>Join - Jesús María Vip</p>
-                <p class="text-justify">El proyecto contará con departamentos funcionales de 1,2,3 dormitorios. Con la mejor distribución e iluminación, ventilación así como las mejores áreas sociales de la zona
-                y un impresionante lobby de doble altura, además contará con una zona Pet - Friendly para tu mascota. Algo nunca antes visto en la zona, así como 50 modelos de departamento para que elijas el que más se acomoda a tu necesidad. El proyecto cuenta con la mejor accesibilidad y una ubicación privilegiada en la Av. Cuba 1145
-                Cerca de las Avenidas principales</p>
+                <%= proyecto.nombre %>
+                <hr>
+                <div class="text-justify"><%= proyecto.caracteristicas %></div>
             </a>
-        </div>
+         </div>
+        <% end %>
     </div>
+</div>
+
+<!--
     <br>
     <div class="row">
         <div class="col-3">
@@ -130,7 +137,7 @@
         </div>
     </div>
 
-<!--
+
     <br>
         <div class="row">
         <div class="col-3">

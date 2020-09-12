@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :empleados
   resources :departamentos
   resources :proyectos
+
   get 'citas/index'
   get 'home/index'
   get 'home/index2'

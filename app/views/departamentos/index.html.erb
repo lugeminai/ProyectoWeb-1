@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Proyecto</th>
+      <th>Piso</th>
       <th>Area</th>
       <th>Habitaciones</th>
       <th>Precio</th>
@@ -18,6 +19,7 @@
     <% @departamentos.each do |departamento| %>
       <tr>
         <td><%= departamento.proyecto %></td>
+        <td><%= departamento.piso %></td>
         <td><%= departamento.area %></td>
         <td><%= departamento.habitaciones %></td>
         <td><%= departamento.precio %></td>

@@ -28,7 +28,7 @@ class ProyectosController < ApplicationController
 
     respond_to do |format|
       if @proyecto.save
-        format.html { redirect_to @proyecto, notice: 'Proyecto was successfully created.' }
+        format.html { redirect_to @proyecto, notice: 'El proyecto se ha registrado.' }
         format.json { render :show, status: :created, location: @proyecto }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ProyectosController < ApplicationController
   def update
     respond_to do |format|
       if @proyecto.update(proyecto_params)
-        format.html { redirect_to @proyecto, notice: 'Proyecto was successfully updated.' }
+        format.html { redirect_to @proyecto, notice: 'El proyecto ha sido actualizado.' }
         format.json { render :show, status: :ok, location: @proyecto }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ProyectosController < ApplicationController
   def destroy
     @proyecto.destroy
     respond_to do |format|
-      format.html { redirect_to proyectos_url, notice: 'Proyecto was successfully destroyed.' }
+      format.html { redirect_to proyectos_url, notice: 'El registro fue eliminado.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,7 @@ class ProyectosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def proyecto_params
-      params.require(:proyecto).permit(:nombre, :ubicacion, :precio, :caracteristicas, :fotos)
+      params.require(:proyecto).permit(:nombre, :ubicacion, :cantidad, :caracteristicas, :fotos)
     end
 end
+

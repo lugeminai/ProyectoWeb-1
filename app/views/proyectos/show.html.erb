@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<h2>Resumen</h2>
+
+<hr>
+
 <p>
   <strong>Nombre:</strong>
   <%= @proyecto.nombre %>
@@ -11,8 +15,8 @@
 </p>
 
 <p>
-  <strong>Precio:</strong>
-  <%= @proyecto.precio %>
+  <strong>Precio por metro cuadrado:</strong>
+  <%= @proyecto.cantidad %>
 </p>
 
 <p>
@@ -25,5 +29,7 @@
   <%= @proyecto.fotos %>
 </p>
 
-<%= link_to 'Edit', edit_proyecto_path(@proyecto) %> |
-<%= link_to 'Back', proyectos_path %>
+<hr>
+
+<%= link_to 'Editar', edit_proyecto_path(@proyecto), :class => "btn btn-outline-primary"  %> 
+<%= link_to 'Regresar', proyectos_path, :class => "btn btn-outline-warning" %>

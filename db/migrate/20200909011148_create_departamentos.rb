@@ -1,7 +1,8 @@
 class CreateDepartamentos < ActiveRecord::Migration[6.0]
   def change
     create_table :departamentos do |t|
-      t.stringpiso :proyecto
+      t.string :proyecto
+      t.string :piso
       t.integer :area
       t.integer :habitaciones
       t.integer :precio

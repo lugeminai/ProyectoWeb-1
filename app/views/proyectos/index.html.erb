@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Proyectos</h1>
-
-<table>
+<br>
+<table class="table table-hover">
   <thead>
-    <tr>
+    <tr class="bg-primary">
       <th>Nombre</th>
       <th>Ubicacion</th>
-      <th>Precio</th>
+      <th>Cantidad</th>
       <th>Caracteristicas</th>
       <th>Fotos</th>
       <th colspan="3"></th>
@@ -19,12 +19,12 @@
       <tr>
         <td><%= proyecto.nombre %></td>
         <td><%= proyecto.ubicacion %></td>
-        <td><%= proyecto.precio %></td>
-        <td><%= proyecto.caracteristicas %></td>
+        <td><%= proyecto.cantidad %></td>
+        <td><p class="text-justify"><%= proyecto.caracteristicas %></p></td>
         <td><%= proyecto.fotos %></td>
-        <td><%= link_to 'Show', proyecto %></td>
-        <td><%= link_to 'Edit', edit_proyecto_path(proyecto) %></td>
-        <td><%= link_to 'Destroy', proyecto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', proyecto, :class => "btn btn-outline-primary btn-sm" %></td>
+        <td><%= link_to 'Editar', edit_proyecto_path(proyecto) , :class => "btn btn-outline-warning btn-sm"%></td>
+        <td><%= link_to 'Eliminar', proyecto, :class=> "btn btn-outline-danger btn-sm", method: :delete, data: { confirm: '¿Está seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,5 @@
 
 <br>
 
-<%= link_to 'New Proyecto', new_proyecto_path %>
+<%= link_to 'Nuevo Proyecto', new_proyecto_path, :class => "btn btn-outline-primary" %>
+

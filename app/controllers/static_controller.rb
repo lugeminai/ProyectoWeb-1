@@ -1,5 +1,10 @@
 class StaticController < ApplicationController
 	layout 'static'
+
+	def index
+	
+	end
+
 	def nosotros
 	end
 
@@ -10,6 +15,16 @@ class StaticController < ApplicationController
 	end
 
 	def proyectos
+		@proyectos = Proyecto.all
+
+
+
+
+
+
+
+
+
 	end
 
 	def admDepartamento		
@@ -47,4 +62,5 @@ class StaticController < ApplicationController
 
 	def ingVentas
 	end
+
 end

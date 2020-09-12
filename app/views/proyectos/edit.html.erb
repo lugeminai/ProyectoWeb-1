@@ -1,6 +1,7 @@
-<h1>Editing Proyecto</h1>
+
+<h1>Administrar Proyecto</h1>
 
 <%= render 'form', proyecto: @proyecto %>
-
-<%= link_to 'Show', @proyecto %> |
-<%= link_to 'Back', proyectos_path %>
+<>
+<%= link_to 'Mostrar', @proyecto, :class => "btn btn-outline-primary" %> |
+<%= link_to 'Regresar', proyectos_path, :class => "btn btn-outline-warning" %>

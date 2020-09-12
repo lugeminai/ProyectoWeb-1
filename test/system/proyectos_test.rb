@@ -17,7 +17,7 @@ class ProyectosTest < ApplicationSystemTestCase
     fill_in "Caracteristicas", with: @proyecto.caracteristicas
     fill_in "Fotos", with: @proyecto.fotos
     fill_in "Nombre", with: @proyecto.nombre
-    fill_in "Precio", with: @proyecto.precio
+    fill_in "Cantidad", with: @proyecto.cantidad
     fill_in "Ubicacion", with: @proyecto.ubicacion
     click_on "Create Proyecto"
 
@@ -32,7 +32,7 @@ class ProyectosTest < ApplicationSystemTestCase
     fill_in "Caracteristicas", with: @proyecto.caracteristicas
     fill_in "Fotos", with: @proyecto.fotos
     fill_in "Nombre", with: @proyecto.nombre
-    fill_in "Precio", with: @proyecto.precio
+    fill_in "Cantidad", with: @proyecto.cantidad
     fill_in "Ubicacion", with: @proyecto.ubicacion
     click_on "Update Proyecto"
 

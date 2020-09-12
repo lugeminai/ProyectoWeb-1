@@ -9,3 +9,39 @@
 # migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
+
+ActiveRecord::Schema.define(version: 2020_09_09_011447) do
+
+  create_table "departamentos", force: :cascade do |t|
+    t.string "proyecto"
+    t.string "piso"
+    t.integer "area"
+    t.integer "habitaciones"
+    t.integer "precio"
+    t.string "fotos"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "empleados", force: :cascade do |t|
+    t.string "dni"
+    t.string "nombres"
+    t.string "apellidos"
+    t.string "perfil"
+    t.string "cargo"
+    t.string "clave"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "proyectos", force: :cascade do |t|
+    t.string "nombre"
+    t.string "ubicacion"
+    t.integer "cantidad"
+    t.string "caracteristicas"
+    t.string "fotos"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+end

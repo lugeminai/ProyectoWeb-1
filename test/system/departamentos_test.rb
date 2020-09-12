@@ -33,6 +33,7 @@ class DepartamentosTest < ApplicationSystemTestCase
     fill_in "Fotos", with: @departamento.fotos
     fill_in "Habitaciones", with: @departamento.habitaciones
     fill_in "Precio", with: @departamento.precio
+    fill_in "Piso", with: @departamento.piso
     fill_in "Proyecto", with: @departamento.proyecto
     click_on "Update Departamento"
 
