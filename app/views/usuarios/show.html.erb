@@ -1,0 +1,30 @@
+<h3 class="p-3 mb-2 bg-dark text-white">BUSQUEDA DE USUARIOS:</h3>
+
+
+<p>
+  <strong>Dni:</strong>
+  <%= @usuario.dni %>
+</p>
+
+<p>
+  <strong>Nombres y Apellidos:</strong>
+  <%= @usuario.nomAp %>
+</p>
+
+<p>
+  <strong>Perfil:</strong>
+  <%= @usuario.perfil %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @usuario.estado %>
+</p>
+
+<p>
+  <strong>Contraseña:</strong>
+  <%= @usuario.contrasena %>
+</p>
+
+<%= link_to 'Editar', edit_usuario_path(@usuario) %> |
+<%= link_to 'Salir', usuarios_path %>
