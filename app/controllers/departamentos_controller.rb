@@ -19,6 +19,7 @@ class DepartamentosController < ApplicationController
 
   # GET /departamentos/1/edit
   def edit
+    @departamento = Departamento.find(params[:id])
   end
 
   # POST /departamentos

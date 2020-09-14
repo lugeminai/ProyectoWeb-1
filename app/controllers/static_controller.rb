@@ -9,6 +9,7 @@ class StaticController < ApplicationController
 	end
 
 	def contactenos
+		@proyectos = Proyecto.all
 	end
 
 	def acceder
@@ -16,15 +17,6 @@ class StaticController < ApplicationController
 
 	def proyectos
 		@proyectos = Proyecto.all
-
-
-
-
-
-
-
-
-
 	end
 
 	def admDepartamento		

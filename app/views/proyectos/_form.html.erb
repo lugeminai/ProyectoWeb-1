@@ -24,21 +24,13 @@
     </div>
   <br>
     <div class="field">
-    <%= form.label :cantidad %>
+    <%= form.label :cantidad , "Precio por metro cuadrado" %>
     <%= form.number_field :cantidad , { :class => "form-control" } %>
   </div>
  <br>
   <div class="form-group">
-    <%= form.label :fotos %>
-      <div class="input-group">
-        <div class="custom-file">
-          <input type="file" class="custom-file-input" id="proyectoimg" aria-describedby="proyectoimgAddon">
-          <label class="custom-file-label" for="proyectoimg">Seleccionar Imagen</label>
-        </div>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="proyectoimgAddon">:)</button>
-        </div>
-      </div>
+    <%= image_tag(proyecto.fotos.url, style: 'height:auto;width:150px', alt: 'Fotos') if  proyecto.fotos? %>
+    <%= form.file_field :fotos, accept:'image/*' %>
   </div>
  </div>
 
@@ -61,7 +53,3 @@
 <% end %>
 
 <hr>
-
-
-
-  

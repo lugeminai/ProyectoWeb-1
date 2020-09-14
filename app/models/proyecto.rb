@@ -1,4 +1,6 @@
 class Proyecto < ApplicationRecord
+    mount_uploader :fotos, ImagenUploader
+
     validates :nombre, presence: {
         message: "es requerido"
     }

@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   
+  resources :reunions
   resources :empleados
   resources :departamentos
   resources :proyectos
+  resources :clientes
 
-  get 'citas/index'
   get 'home/index'
   get 'home/index2'
   get 'static/nosotros'

@@ -21,7 +21,7 @@
         <td><%= proyecto.ubicacion %></td>
         <td><%= proyecto.cantidad %></td>
         <td><p class="text-justify"><%= proyecto.caracteristicas %></p></td>
-        <td><%= proyecto.fotos %></td>
+        <td><%= image_tag(proyecto.fotos.url, style: 'height:auto;width:150px', alt: 'Fotos') if  proyecto.fotos? %></td>
         <td><%= link_to 'Mostrar', proyecto, :class => "btn btn-outline-primary btn-sm" %></td>
         <td><%= link_to 'Editar', edit_proyecto_path(proyecto) , :class => "btn btn-outline-warning btn-sm"%></td>
         <td><%= link_to 'Eliminar', proyecto, :class=> "btn btn-outline-danger btn-sm", method: :delete, data: { confirm: '¿Está seguro?' } %></td>
