@@ -57,9 +57,11 @@ ActiveRecord::Schema.define(version: 2020_09_13_044920) do
   create_table "citas", force: :cascade do |t|
     t.string "codigo"
     t.string "nombre"
-    t.string "perfil"
-    t.string "estado"
-    t.string "contrasena"
+    t.string "apellido"
+    t.string "dni"
+    t.string "telefono"
+    t.datetime "fecha"
+    t.boolean "estado"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
