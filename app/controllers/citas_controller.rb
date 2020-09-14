@@ -69,6 +69,6 @@ class CitasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cita_params
-      params.require(:cita).permit(:dni, :nomAp, :perfil, :estado, :contrasena)
+      params.require(:cita).permit(:codigo, :mombre, :apellido, :dni, :telefono, :fecha, :estado)
     end
 end
