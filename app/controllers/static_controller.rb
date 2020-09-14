@@ -40,6 +40,7 @@ class StaticController < ApplicationController
 	def solicitudcita
 	end
 
+
 	def separardepartamento
 	end
 
