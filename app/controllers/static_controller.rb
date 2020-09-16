@@ -30,7 +30,10 @@ class StaticController < ApplicationController
 
 	def ingProyecto		
 	end
-
+	
+	def ingCita
+	end
+	
 	def admUsuario
 	end
 

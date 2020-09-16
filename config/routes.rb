@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :cita
   resources :reunions
   resources :empleados
   resources :departamentos

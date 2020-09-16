@@ -10,15 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_14_000900) do
+ActiveRecord::Schema.define(version: 2020_09_16_233152) do
 
-  create_table "citas", force: :cascade do |t|
+  create_table "cita", force: :cascade do |t|
     t.string "codigo"
     t.string "nombre"
     t.string "apellido"
     t.string "dni"
     t.string "telefono"
     t.datetime "fecha"
+    t.integer "hora"
     t.boolean "estado"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
