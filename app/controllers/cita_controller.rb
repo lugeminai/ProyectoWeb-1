@@ -28,7 +28,7 @@ class CitaController < ApplicationController
 
     respond_to do |format|
       if @citum.save
-        format.html { redirect_to @citum, notice: 'Citum was successfully created.' }
+        format.html { redirect_to @citum, notice: 'La cita se registró con éxito.' }
         format.json { render :show, status: :created, location: @citum }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CitaController < ApplicationController
   def update
     respond_to do |format|
       if @citum.update(citum_params)
-        format.html { redirect_to @citum, notice: 'Citum was successfully updated.' }
+        format.html { redirect_to @citum, notice: 'La cita se actualizó con éxito.' }
         format.json { render :show, status: :ok, location: @citum }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CitaController < ApplicationController
   def destroy
     @citum.destroy
     respond_to do |format|
-      format.html { redirect_to cita_url, notice: 'Citum was successfully destroyed.' }
+      format.html { redirect_to cita_url, notice: 'La cita se eleminó con éxito.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class CitaController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def citum_params
-      params.require(:citum).permit(:codigo, :nombre, :apellido, :dni, :telefono, :fecha, :hora, :estado)
+      params.require(:citum).permit(:codigo, :nombre, :apellido, :dni, :telefono, :fecha, :estado)
     end
 end

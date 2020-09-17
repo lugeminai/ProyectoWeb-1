@@ -14,23 +14,23 @@
 <div class="row">
   <div class="col-6">
     <div class="field">
-      <%= form.label :codigo %>
+      <%= form.label :codigo, "Código" %>
       <%= form.text_field :codigo, { :class => "form-control" } %>
     </div>
     <br>
   <div class="field">
-    <%= form.label :nombre %>
+    <%= form.label :nombre , "Nombres" %>
     <%= form.text_field :nombre, { :class => "form-control" }%>
   </div>
   <br>
 
   <div class="field">
-    <%= form.label :apellido %>
+    <%= form.label :apellido , "Apellidos" %>
     <%= form.text_field :apellido, { :class => "form-control" } %>
   </div>
 <br>
   <div class="field">
-    <%= form.label :dni %>
+    <%= form.label :dni , "DNI" %>
     <%= form.text_field :dni, { :class => "form-control" } %>
   </div>
   <br>
@@ -38,16 +38,18 @@
 
 <div class="col-6">
   <div class="field">
-    <%= form.label :telefono %>
+    <%= form.label :telefono, "Teléfono" %>
     <%= form.text_field :telefono, { :class => "form-control" } %>
   </div>
   <br>
 
   <div class="field">
-    <%= form.label :fecha %>
+    <%= form.label :fecha, "Fecha y hora" %>
+    <br>
     <%= form.datetime_select :fecha, { :class => "form-control" } %>
   </div>
   <br>
+
 
   <div class="field">
     <%= form.label :estado, "Atendido" %>

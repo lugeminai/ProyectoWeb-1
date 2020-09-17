@@ -29,7 +29,8 @@ Rails.application.routes.draw do
   get 'admin/reporte'
   get 'admin/ventas'
   get 'admin/ingVentas'
-  get 'admin/citas'
+  get 'admin/admCita'
+  get 'admin/ingCita'
 
   get 'static/detalledep'
   get 'static/solicitudcita'

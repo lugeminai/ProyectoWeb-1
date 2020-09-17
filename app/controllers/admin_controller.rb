@@ -7,7 +7,10 @@ class AdminController < ApplicationController
 	def ingDepartamento		
 	end
 
-	def citas 
+	def admCita	
+	end
+
+	def ingCita		
 	end
 
 	def admProyecto	

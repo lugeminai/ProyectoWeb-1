@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<br>
 <p>
-  <strong>Codigo:</strong>
+  <strong>Código:</strong>
   <%= @citum.codigo %>
 </p>
 
@@ -16,29 +16,24 @@
 </p>
 
 <p>
-  <strong>Dni:</strong>
+  <strong>DNI:</strong>
   <%= @citum.dni %>
 </p>
 
 <p>
-  <strong>Telefono:</strong>
+  <strong>Teléfono:</strong>
   <%= @citum.telefono %>
 </p>
 
 <p>
-  <strong>Fecha:</strong>
+  <strong>Fecha y hora:</strong>
   <%= @citum.fecha %>
 </p>
 
 <p>
-  <strong>Hora:</strong>
-  <%= @citum.hora %>
-</p>
-
-<p>
   <strong>Estado:</strong>
-  <%= @citum.estado %>
+  <%= @citum.estado ? "Atendido": "No atendido" %>
 </p>
 
-<%= link_to 'Edit', edit_citum_path(@citum) %> |
-<%= link_to 'Back', cita_path %>
+<%= link_to 'Editar', edit_citum_path(@citum) %> |
+<%= link_to 'Regresar', cita_path %>
