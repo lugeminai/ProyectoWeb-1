@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Cita</h1>
-
-<table>
+<h1>Citas con los clientes</h1>
+<br>
+<table class="table table-hover">
   <thead>
-    <tr>
+    <tr class="bg-primary">
       <th>Codigo</th>
       <th>Nombre</th>
       <th>Apellido</th>
@@ -28,9 +28,9 @@
         <td><%= citum.fecha %></td>
         <td><%= citum.hora %></td>
         <td><%= citum.estado %></td>
-        <td><%= link_to 'Show', citum %></td>
-        <td><%= link_to 'Edit', edit_citum_path(citum) %></td>
-        <td><%= link_to 'Destroy', citum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', citum, :class => "btn btn-outline-primary btn-sm" %></td>
+        <td><%= link_to 'Editar', edit_citum_path(citum), :class => "btn btn-outline-warning btn-sm"%></td>
+        <td><%= link_to 'Eliminar', citum, :class=> "btn btn-outline-danger btn-sm", method: :delete, data: { confirm: 'Confirmar eliminacion de cita' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +38,4 @@
 
 <br>
 
-<%= link_to 'New Citum', new_citum_path %>
+<%= link_to 'Añadir cita', new_citum_path, :class => "btn btn-outline-primary"%>
