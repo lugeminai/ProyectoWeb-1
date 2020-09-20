@@ -1,6 +1,7 @@
-<h1>Editar cita</h1>
+<h1><p class="text-primary">Editar cita</p></h1>
 
 <%= render 'form', citum: @citum %>
 
-<%= link_to 'Mostrar', @citum %> |
-<%= link_to 'Regresar', cita_path %>
+<%= link_to 'Mostrar', @citum, :class => "btn btn-outline-info" %>
+<%= link_to 'Regresar', cita_path, :class => "btn btn-outline-secondary" %>
+<br><br>
