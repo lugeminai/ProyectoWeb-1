@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Administración de citas con los clientes</h1>
+<h1><p class="text-primary">Administración de citas con los clientes</p></h1>
 <br>
 <table class="table table-hover">
   <thead>
@@ -26,7 +26,7 @@
         <td><%= citum.telefono %></td>
         <td><%= citum.fecha %></td>
         <td><%= citum.estado ? "Atendido": "No atendido" %> </td>
-        <td><%= link_to 'Mostrar', citum, :class => "btn btn-outline-primary btn-sm" %></td>
+        <td><%= link_to 'Mostrar', citum, :class => "btn btn-outline-info btn-sm" %></td>
         <td><%= link_to 'Editar', edit_citum_path(citum), :class => "btn btn-outline-warning btn-sm"%></td>
         <td><%= link_to 'Eliminar', citum, :class=> "btn btn-outline-danger btn-sm", method: :delete, data: { confirm: 'Confirmar eliminacion de cita' } %></td>
       </tr>
