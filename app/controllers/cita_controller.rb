@@ -54,11 +54,9 @@ class CitaController < ApplicationController
   # DELETE /cita/1
   # DELETE /cita/1.json
   def destroy
+    @citum = Citum.find(params[:id])
     @citum.destroy
-    respond_to do |format|
-      format.html { redirect_to cita_url, notice: 'La cita se eleminó con éxito.' }
-      format.json { head :no_content }
-    end
+    redirect_to :action => :index
   end
 
   private
